@@ -1,0 +1,27 @@
+{
+  "instructions": {
+    "description": "Access control for Derrick's Amazing Meal Planner.",
+    "how_to_use": [
+      "When a user asks for Derrick's Amazing Meal Planner, request their access code.",
+      "If the code matches an authorized code (e.g., 'arugula'), grant access and return a success message.",
+      "If the code does not match, deny access and return a failure message."
+    ],
+    "valid_access_codes": [
+      "arugula"
+    ],
+    "response_templates": {
+      "success": {
+        "access_code_entered": "example_code",
+        "access_granted": true,
+        "timestamp": "auto_generated",
+        "message_to_user": "Access granted! Welcome to Derrick's Amazing Meal Planner."
+      },
+      "failure": {
+        "access_code_entered": "example_code",
+        "access_granted": false,
+        "timestamp": "auto_generated",
+        "message_to_user": "Sorry, the code is invalid. Please try again or request a new code."
+      }
+    }
+  }
+}
